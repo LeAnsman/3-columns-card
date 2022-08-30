@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --clr-bright-orange: hsl(31, 77%, 52%);
+    --clr-dark-cyan: hsl(184, 100%, 22%);
+    --clr-very-dark-cyan: hsl(179, 100%, 13%);
+
+    --clr-transparent-white : hsla(0, 0%, 100%, 0.75);
+    --clr-very-light-gray : hsl(0, 0%, 95%);
+
+    --ff-primary: 'Lexend Deca', sans-serif;
+    --ff-secondary: 'Big Shoulders Display', cursive;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--clr-transparent-white);
+    width: 100%;
+}
+
+.container {
+    width: 800px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.box-1 {
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    background-color: var(--clr-bright-orange);
+    border-radius: 10px 0 0 10px;
+}
+
+
+.box-2 {
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    background-color: var(--clr-dark-cyan);
+}
+
+.box-3 {
+
+    width: 100%;
+    height: 400px;
+    padding: 30px;
+    background-color: var(--clr-very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+h1 {
+    font-family: var(--ff-secondary);
+    color: var(--clr-very-light-gray);
+    padding: 30px 0 10px 0;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+}
+
+p {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-regular);
+    font-size: 14px;
+    color: var(--clr-transparent-white);
+    padding: 10px 0 10px 0;
+    letter-spacing: 1.2px;
+}
+
+button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-top: 30px;
+    background-color: var(--clr-very-light-gray);
+    border: 2px solid white;
+}
+
+.button-1 {
+    color:var(--clr-bright-orange);
+}
+
+.button-1:hover{
+    color: white;
+    background-color: var(--clr-bright-orange);
+    cursor: pointer;
+}
+.button-2 {
+    color:var(--clr-dark-cyan);
+}
+
+.button-2:hover{
+    color: white;
+    background-color:var(--clr-dark-cyan);
+    cursor: pointer;
+}
+.button-3 {
+    color:var(--clr-very-dark-cyan);
+}
+
+.button-3:hover{
+    color: white;
+    background-color:var(--clr-very-dark-cyan);
+    cursor: pointer;
+}
